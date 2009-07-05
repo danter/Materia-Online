@@ -1,0 +1,118 @@
+### Stats ###
+HP.		-	Hit Points
+MP.		-	Magic Points
+
+--- Chrono Trigger ---
+PWR.	-	Power
+SPD.	-	Speed
+HIT.	-	Hit
+EV.		-	Evade
+MAG.	-	Magic power
+STAM.	-	Stamina
+MDEF.	-	Magic Defence
+
+Attack
+Defense
+
+--- Final Fantasy VII ---
+Strenght
+Dexterity
+Vitality
+Magic
+Spirit
+Luck
+
+Attack
+Attack% - Hit
+Defense
+Defense% - Evade
+
+Magic Atk
+Magic Def
+Magic Def% - Magic Evade
+
+
+
+### Battle Formulas ###
+
+
+## Stats ##
+
+Power		- Strenght, but this also affect skill damage. (Physical power)
+Dexterity	- Manages how well you can controle your body, also needed to learn new skills. (hit, evade)
+Agility		- Manages how fast you are, and how good reflexes you have. (Speeed, Evade)
+Vitality	- Defines how though your body is.
+Intellect	- This skill is not only for spellcasters, it's mainly needed to learn new skills, focus energy and refine the usage of energy. (spell/skill hit?)
+Spirit 		- Mostly affects regeneration abilities in combat, and the ability to gather energy. (spell/skill pwr?)
+Luck		- Pure luck (droprates, lucky evades, gambling, lucky hits, fatal blows, etc) (spell/skill/normal hit, crit rate)
+
+HP = Level * Factor + Vit * Factor + [Materia factors]
+MP = Level * Factor + Int * Factor + [Materia factors]
+
+(Out of combat)
+HPRegen = HP * Factor + Spirit * Factor + [Materia factors]
+MPRegen = SP * Factor + Spirit * Factor + [Materia factors]
+
+(In combat)
+HPRegen = Spirit * Factor + [Materia factors]
+MPRegen = Spirit * Factor + [Materia factors]
+
+Speed = Level * Factor + Agi * Factor
+
+Attack = (Level * Factor + Pwr * Factor + Wep * Factor + [Materia factors]) * [Wep Training Factor (scales from 0 to 1)]
+Defense = Level * Factor + Armor * Factor + Vit * Factor + Dex * Factor + [Materia factors]
+
+Hit = (Level * Factor + Dex * Factor + Luck * Factor + [Materia factors]) * [Wep Training Factor (scales from 0 to 1)]
+Evade = Level * Factor + Agi * Factor + Dex * Factor + Luck * Factor + [Materia factors]
+End Hit = Hit - Evade
+
+
+## Skills ##
+
+Status Effects: 
+Poison (Decrease HP by time)
+Regen (Increase HP by time
+Blind (Stat decrease, hit rating)
+Sharpness (Stat increase, hit rating)
+Silence (Unable to use spells)
+Clairvoyance (Spell casts become faster?)
+Reflect (Reflects some magic spells)
+
+Pure Effects:
+Damage spells (elemental, physical)
+Healing spells (restores HP)
+Dispell spells (removes status effects?)
+Curse spells (Stat decrease, Item Stickiness?, etc)
+Bless spells (Stat boosts, Item changes?, etc)
+Mind spells (confuse, mind controle)
+
+Ritual skills:
+Skills that takes seweral turns to set up
+and you might need to get to specific positions
+to set it up. After it's set up the target might
+need to get into a specific position aswell.
+But when it's all done it deals mighty damage thou.
+
+
+## Turn Based Combat ##
+
+Add "luck" and "suprise" rolls to each participant, add it to "speed" value
+Check speed values to determine continuous attacks
+
+Turn based Example
+(X) - This Character makes his move this time.
+(-) - Reset and penalty for just making the move.
+
+turn 1 (b wins 1)	turn 2 (c wins 1)	turn 3 (b wins 2)	turn 4 (c wins 2)	turn 5 (b wins 3)
+b=55 (X)			b=55-5=50 (-)		b=50+55=105 (X)		b=55-5=50 (-)		b=55+55=110 (X)
+c=27				c=27+27=54 (X)		c=27-5=22 (-)		c=27-27=54 (X)		c=27-5=22 (-)
+a=12				b=24				a=24+12=36			a=36+12=48			a=48+12=60
+
+
+turn 6 (a wins 1)	turn 7 (b wins 4)	turn 8 (c wins 3)	turn 9 (b wins 5)
+b=55-5=50 (-)		b=50+55=105 (X)		b=55-5=50 (-)		b=55+55=105 (X)
+c=22+27=49			c=49+27=76			c=76+27=98 (X)		c=27-5=22 (-)
+a=60+12=72 (X)		a=12-5=7 (-)		a=7+12=19			a=19+12=48
+
+
+

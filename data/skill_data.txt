@@ -1,0 +1,10 @@
+// This file define different skills that is awailable in the game
+// A skill starts with a <skill> tag, and ends with a </skill> tag.
+
+<skill>
+	name: minor healing
+	type: magic
+	casttime: 10.0f
+	duration: 0.0f
+	effect: source.sp -= 10 && target.hp += ( source.int / 2 ) + source.lvl
+</skill>

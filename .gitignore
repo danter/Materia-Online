@@ -1,0 +1,6 @@
+.objs
+obj
+libtnl
+*.depend
+*.layout
+*.exe

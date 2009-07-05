@@ -1,0 +1,9 @@
+// ID / Name / faction / level / pwr / dex / agi / vit / intel / spi / luk / wep_train
+10001 Stab10 beast 10 10 10 10 10 10 10 10 1.0
+//10002 Stab20 beast 20 20 20 20 20 20 20 20 1.0
+// 10003 Stab30 beast 30 30 30 30 30 30 30 30 1.0
+// 10004 Angeli hero 2 15 5 5 5 5 5 5 1.0
+10005 Anders hero 7 8 9 10 11 12 13 14 1.0
+// 10006 Tester hero 13 12 10 21 5 5 5 5 0.9
+// 10007 Tester hero 13 12 13 18 5 5 5 5 0.9
+10008 Danter hero 18 15 19 11 5 5 5 18 1.0
