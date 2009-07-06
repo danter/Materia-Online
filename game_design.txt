@@ -1,7 +1,7 @@
 ### Gear, Materia and synchronisation ###
 
---- Materia Synchronisation---
-By wearing the same materia long times you gain a materia synchronisation, and after about 1 - 5 minutes (maybe more) you obtain max synchronisation and can then use that materia at full power, this is to prevent materia switches in the middle of battle. All materias can be switched in the middle of battle thou.
+--- Materia Synchronization---
+By wearing the same materia long times you gain a materia synchronisation, and after about 1 - 5 minutes (maybe more) you obtain max synchronisation and can then use that materia at full power, this is to prevent materia switches in the middle of battle. All materias can be switched in the middle of battle though.
 
 --- Gear and weapon switches ---
-Gear can't be switched in battle but weapons can still be switched, if they are in a "ready slot". Switching weapons in battle, creates a small cooldown time before you can use any actions again. A "ready slot" is a spot where you easerly can reach the weapon, without messing with a backpack or the like. Ready slot weapons, is something that should be drawn on your character when walking out in the world aswell, or on the ground if it is a "world ready slot".
+Gear can't be changed in battle but weapons can still be switched, if they are in a "ready slot". Switching weapons in battle, creates a small cooldown time before you can use any actions again. A "ready slot" is a spot where you easily can reach the weapon, without messing with a backpack or the like. Ready slot weapons is something that should be drawn on your character when walking out in the world aswell, or on the ground if it is a "world ready slot".
